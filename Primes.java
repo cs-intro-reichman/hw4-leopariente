@@ -22,6 +22,7 @@ public class Primes {
                 counter++;
         }
         double primeCount = 0;
+        System.out.println("Prime numbers up to " + args[0] + ":");
         for (int i = 2; i < arr.length; i++) {
             if (arr[i]) {
                 System.out.println(i);
