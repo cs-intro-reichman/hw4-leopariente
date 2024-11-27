@@ -1,5 +1,4 @@
 
-
 public class TesterArrayCharOps {
 
     public static void main(String[] args) {
@@ -22,13 +21,12 @@ public class TesterArrayCharOps {
         boolean test3 = ArrCharOps.charAt(arr1, 9) == ' ';
         boolean test4 = ArrCharOps.charAt(arr1, arr1.length - 1) == 'e';
 
-        int passed = (test1 ? 1 : 0) + (test2 ? 1 : 0) + (test3 ? 1 : 0) + 
-                    (test4 ? 1 : 0);
-        String verdict = passed == num_tests ? "(Passed)": "Failed";
+        int passed = (test1 ? 1 : 0) + (test2 ? 1 : 0) + (test3 ? 1 : 0) +
+                (test4 ? 1 : 0);
+        String verdict = passed == num_tests ? "(Passed)" : "Failed";
 
         System.out.println("Passed " + passed + "/" + num_tests + " tests " + verdict);
     }
-
 
     private static void testEquals() {
         int num_tests = 3;
@@ -43,7 +41,7 @@ public class TesterArrayCharOps {
         boolean test3 = ArrCharOps.equals(empty_arr, empty_arr);
 
         int passed = (test1 ? 1 : 0) + (test2 ? 1 : 0) + (test3 ? 1 : 0);
-        String verdict = passed == num_tests ? "(Passed)": "Failed";
+        String verdict = passed == num_tests ? "(Passed)" : "Failed";
 
         System.out.println("Passed " + passed + "/" + num_tests + " tests " + verdict);
     }
@@ -65,8 +63,8 @@ public class TesterArrayCharOps {
         boolean test7 = ArrCharOps.lastIndexOf(arr1, 'B') == -1;
 
         int passed = (test1 ? 1 : 0) + (test2 ? 1 : 0) + (test3 ? 1 : 0) + (test4 ? 1 : 0) +
-                     (test5 ? 1 : 0) + (test6 ? 1 : 0) + (test7 ? 1 : 0);
-        String verdict = passed == num_tests ? "(Passed)": "Failed";
+                (test5 ? 1 : 0) + (test6 ? 1 : 0) + (test7 ? 1 : 0);
+        String verdict = passed == num_tests ? "(Passed)" : "Failed";
 
         System.out.println("Passed " + passed + "/" + num_tests + " tests " + verdict);
     }
@@ -85,7 +83,7 @@ public class TesterArrayCharOps {
         boolean test3 = ArrCharOps.equals(ArrCharOps.concat(empty_arr, arr3), arr3);
 
         int passed = (test1 ? 1 : 0) + (test2 ? 1 : 0) + (test3 ? 1 : 0);
-        String verdict = passed == num_tests ? "(Passed)": "Failed";
+        String verdict = passed == num_tests ? "(Passed)" : "Failed";
 
         System.out.println("Passed " + passed + "/" + num_tests + " tests " + verdict);
     }
@@ -99,7 +97,7 @@ public class TesterArrayCharOps {
         boolean test2 = ArrCharOps.equals(ArrCharOps.subArray(arr1, 9, 16), "stop me".toCharArray());
 
         int passed = (test1 ? 1 : 0) + (test2 ? 1 : 0);
-        String verdict = passed == num_tests ? "(Passed)": "(Failed)";
+        String verdict = passed == num_tests ? "(Passed)" : "(Failed)";
 
         System.out.println("Passed " + passed + "/" + num_tests + " tests " + verdict);
     }
@@ -116,7 +114,7 @@ public class TesterArrayCharOps {
         boolean test4 = res != 0 && res != -1 && res != 1;
 
         int passed = (test1 ? 1 : 0) + (test2 ? 1 : 0) + (test3 ? 1 : 0) + (test4 ? 1 : 0);
-        String verdict = passed == num_tests ? "(Passed)": "Failed";
+        String verdict = passed == num_tests ? "(Passed)" : "Failed";
 
         System.out.println("Passed " + passed + "/" + num_tests + " tests " + verdict);
     }
@@ -125,7 +123,7 @@ public class TesterArrayCharOps {
         int num_tests = 3;
         System.out.println("Testing 'hashCode':");
 
-        char[] arr1 = {'a'};
+        char[] arr1 = { 'a' };
         char[] arr2 = "lemon".toCharArray();
         char[] arr3 = {};
 
@@ -134,8 +132,8 @@ public class TesterArrayCharOps {
         boolean test3 = ArrCharOps.hashCode(arr3) == (long) 0;
 
         int passed = (test1 ? 1 : 0) + (test2 ? 1 : 0) + (test3 ? 1 : 0);
-        String verdict = passed == num_tests ? "(Passed)": "Failed";
+        String verdict = passed == num_tests ? "(Passed)" : "Failed";
 
-        System.out.println("Passed " + passed + "/" + num_tests + " tests " + verdict); 
+        System.out.println("Passed " + passed + "/" + num_tests + " tests " + verdict);
     }
 }
