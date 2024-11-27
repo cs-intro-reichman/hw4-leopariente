@@ -112,7 +112,6 @@ public class TesterArrayCharOps {
 
         int res = ArrCharOps.compareTo("abc", "");
         boolean test4 = res != 0 && res != -1 && res != 1;
-        System.out.println(test1 + " " + test2 + " " + test3 + " " + test4);
 
         int passed = (test1 ? 1 : 0) + (test2 ? 1 : 0) + (test3 ? 1 : 0) + (test4 ? 1 : 0);
         String verdict = passed == num_tests ? "(Passed)" : "Failed";

@@ -30,6 +30,6 @@ public class Primes {
         }
         int percentage = (int) Math.ceil((primeCount / arr.length) * 100);
         System.out
-                .println("There are " + (int) primeCount + " primes between 2 and 30 (" + percentage + "% are primes)");
+                .println("There are " + (int) primeCount + " primes between 2 and " + n + " (" + percentage + "% are primes)");
     }
 }

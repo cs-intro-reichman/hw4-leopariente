@@ -184,7 +184,7 @@ public class ArrCharOps {
             return 1;
         for (int i = 0; i < str1.length(); i++) {
             int ch1 = str1.charAt(i);
-            int ch2 = str1.charAt(i);
+            int ch2 = str2.charAt(i);
             if (ch1 < ch2) {
                 return -1;
             }
