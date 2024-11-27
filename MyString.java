@@ -36,8 +36,10 @@ public class MyString {
             return true;
         for (int i = 0; i < str1.length(); i++) {
             for (int j = 0; j < str2.length(); j++) {
-                if ((int) str1.charAt(i + j) != (int) str2.charAt(j)) {
-                    break;
+                if (str1.length() > i + j) {
+                    if ((int) str1.charAt(i + j) != (int) str2.charAt(j)) {
+                        break;
+                    }
                 }
                 if (j == str2.length() - 1) {
                     return true;
