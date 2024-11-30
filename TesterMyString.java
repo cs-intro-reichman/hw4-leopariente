@@ -29,7 +29,6 @@ public class TesterMyString {
         boolean test3 = !MyString.contains("baba yaga", "John Wick is the baba yaga");
         boolean test4 = !MyString.contains("baba yaga", "Yaga");
         boolean test5 = !MyString.contains("baba yaga", "babayaga");
-        System.out.println(MyString.contains("Effective presentations must be clear, concise, and humble", "leverage"));
 
         int passed = (test1 ? 1 : 0) + (test2 ? 1 : 0) + (test3 ? 1 : 0) + (test4 ? 1 : 0) +
                 (test5 ? 1 : 0);
