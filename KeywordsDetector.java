@@ -32,7 +32,5 @@ public class KeywordsDetector {
                 }
             }
         }
-        // for some reasin this is in the test
-        System.out.print("Effective presentations must be clear, concise, and humble");
     }
 }

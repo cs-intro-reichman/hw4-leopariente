@@ -15,7 +15,7 @@ public class TesterMyString {
         boolean test3 = MyString.lowerCase("i love infi and intro").equals("i love infi and intro");
 
         int passed = (test1 ? 1 : 0) + (test2 ? 1 : 0) + (test3 ? 1 : 0);
-        String verdict = passed == num_tests ? "(Passed)": "Failed";
+        String verdict = passed == num_tests ? "(Passed)" : "Failed";
 
         System.out.println("Passed " + passed + "/" + num_tests + " tests " + verdict);
     }
@@ -29,11 +29,11 @@ public class TesterMyString {
         boolean test3 = !MyString.contains("baba yaga", "John Wick is the baba yaga");
         boolean test4 = !MyString.contains("baba yaga", "Yaga");
         boolean test5 = !MyString.contains("baba yaga", "babayaga");
-
+        System.out.println(MyString.contains("Effective presentations must be clear, concise, and humble", "leverage"));
 
         int passed = (test1 ? 1 : 0) + (test2 ? 1 : 0) + (test3 ? 1 : 0) + (test4 ? 1 : 0) +
-                     (test5 ? 1 : 0);
-        String verdict = passed == num_tests ? "(Passed)": "Failed";
+                (test5 ? 1 : 0);
+        String verdict = passed == num_tests ? "(Passed)" : "Failed";
 
         System.out.println("Passed " + passed + "/" + num_tests + " tests " + verdict);
     }
