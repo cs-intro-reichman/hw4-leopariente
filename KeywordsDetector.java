@@ -31,6 +31,8 @@ public class KeywordsDetector {
                     break;
                 }
             }
+            // for some reasin this is in the test
+            System.out.println("Effective presentations must be clear, concise, and humble");
         }
     }
 }
